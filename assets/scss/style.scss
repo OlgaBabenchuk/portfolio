@@ -1,0 +1,8 @@
+@import 'bourbon'; // http://bourbon.io/
+@import 'components/reset'; //public resets
+@import 'https://fonts.googleapis.com/css?family=Arvo|Cabin+Sketch|Gloria+Hallelujah|Oleo+Script';
+@import 'components/variables'; // colors, fonts etc...
+@import 'components/mixins'; // custom mixins
+@import 'components/layout'; // responsive grid and media queries
+@import 'components/skills-heart'; // heart with text on page-skills
+@import 'components/main';

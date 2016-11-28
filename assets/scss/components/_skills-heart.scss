@@ -1,0 +1,268 @@
+.skills__heart {
+    position: absolute;
+    top: 50%;
+    margin-top: -300px;
+    left: 50%;
+    margin-left: -750px;
+    width: 700px;
+    height: 600px;
+    font-size: 1.5em;
+    font-family: Gloria Hallelujah, sans-serif;
+    text-shadow: 2px 2px 5px #000, 2em 2em 4em #417a3f;
+
+    [class*="heart-"] {
+        position: absolute;
+        opacity: 0
+    } 
+
+    @include MQ(L) {
+        margin-left: -650px;
+        margin-top: -250px;
+        width: 600px;
+        height: 500px;       
+    }
+
+    @include MQ(M) {
+        margin-left: -450px;
+        margin-top: -350px;
+        width: 480px;
+        height: 400px; 
+        font-size: 1.1em;     
+    }
+
+     @include MQ(S) {
+        margin-left: -200px;
+        margin-top: -320px;
+        width: 400px;
+        height: 350px;  
+    }
+}
+
+
+// font-waight for hesrt-$
+
+.heart-27, .heart-28, .heart-29, .heart-30 {
+    font-weight: 200;
+}
+
+.heart-11, .heart-31 {
+    font-weight: 400;
+}
+
+.heart-2, .heart-13, .heart-14, .heart-16,
+.heart-18, .heart-20, .heart-21, .heart-24,
+.heart-25, .heart-26 {
+    font-weight: 500; 
+}
+
+.heart-6, .heart-17, .heart-32 {
+    font-weight: 600;
+}
+
+.heart-3, .heart-10, .heart-23 {
+   font-weight: 700;
+}
+
+.heart-7, .heart-9, .heart-19 {
+    font-weight: 800;
+}
+
+.heart-4, .heart-5, .heart-8, .heart-12,
+.heart-22 {
+    font-weight: 900;
+}
+
+
+// position and size for hesrt-$
+
+.heart-1 {
+    top: 0;
+    left: 20%;
+}    
+
+.heart-2 {
+    top: 7%;
+    left: 5%;    
+    font-size: 150%;
+}
+
+.heart-3 {
+    top: 0;
+    right: 15%;
+    font-size: 120%;
+}
+
+.heart-4 {
+    top: 14%;
+    right: 19%;
+    font-size: 170%;
+}
+
+.heart-5 {
+    top: 35%;
+    right: 45%;
+    font-size: 300%;
+}
+
+.heart-6 {
+    top: 28%;
+    right: 3%;    
+    font-size: 200%;
+}
+
+.heart-7 {
+    top: 6%;
+    right: 6%;
+    font-size: 177%;
+}
+
+.heart-8 {
+    top: 54%;
+    right: 28%;
+    font-size: 250%;
+}
+
+.heart-9 {
+    top: 24%;
+    left: 29%;
+    font-size: 177%;
+}
+
+.heart-10 {
+    bottom: 21%;
+    right: 20%;
+    font-size: 180%;
+}
+
+.heart-11 {
+    top: 27%;
+    left: 3%;
+    font-size: 117%;
+}
+
+.heart-12 {
+    top: 17%;
+    right: 0;
+    font-size: 260%;
+}
+
+.heart-13 {
+    top: 57%;
+    left: 17%;
+    font-size: 150%;
+}
+
+.heart-14 {
+    top: 37%;
+    left: 7%;
+    font-size: 150%;
+}
+
+.heart-15 {
+    top: 49%;
+    left: 10%;
+    font-weight: 300;
+    font-size: 180%;
+}
+
+.heart-16 {
+    top: 15%;
+    left: 27%;
+    font-size: 98%;
+}
+
+.heart-17 {
+    top: 16%;
+    left: 0;
+    font-size: 178%;
+}
+
+.heart-18 {
+    bottom: 16%;
+    left: 31%;
+    font-size: 122%;
+}
+
+.heart-19 {
+    bottom: 0;
+    left: 48%;
+    font-size: 150%;
+}
+
+.heart-20 {
+    bottom: 7%;
+    right: 37%;
+    font-size: 170%;
+}
+
+.heart-21 {
+    top: 38%;
+    right: 7%;
+    font-size: 164%;
+}
+
+.heart-22 {
+    top: 47%;
+    right: 10%;
+    font-size: 204%;
+}
+
+.heart-23 {
+    bottom: 25%;
+    left: 24%;
+    font-size: 183%;
+}
+
+.heart-24 {
+    bottom: 31%;
+    right: 15%;
+    font-size: 161%;
+}
+
+.heart-25 {
+    top: 40%;
+    right: 32%;
+    font-size: 121%;
+}
+
+.heart-26 {
+    top: 8%;
+    right: 26%;
+    font-size: 128%;
+}
+
+.heart-27 {
+    bottom: 14%;
+    right: 30%;
+    font-size: 124%;
+}
+
+.heart-28 {
+    top: 22%;
+    right: 30%;
+    font-size: 121%;
+}
+
+.heart-29 {
+    bottom: 47%;
+    right: 30%;
+    font-size: 124%;
+}
+
+.heart-30 {
+    bottom: 31%;
+    right: 34%;
+    font-size: 114%;
+}
+
+.heart-31 {
+    top: 31%;
+    right: 44%;
+    font-size: 137%;
+}
+
+.heart-32 {
+    bottom: 31%;
+    right: 47%;
+    font-size: 114%;
+}
