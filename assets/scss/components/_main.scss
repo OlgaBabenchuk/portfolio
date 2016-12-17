@@ -599,7 +599,7 @@ Page "About"
 	@include MQ(S) {
 		position: static;
 		margin: 1em auto 2em;
-		width: 24em;
+		width: 17em;
 	}
 }
 
@@ -631,8 +631,8 @@ Page "About"
 	}
 
 	@include MQ(S) {
-		width: 22em;
-		font-size: 1.1em;
+		width: 21em;
+		font-size: 0.8em;
 		padding: 10px 15px;
 	}
 }
@@ -653,8 +653,8 @@ Page "About"
 	}
 
 	@include MQ(S) {
-		width: 12em;
-		font-size: 2em
+		width: 100%;
+		font-size: 1.5em
 	}
 }
 
@@ -692,10 +692,10 @@ Page "Skills"
 	}
 
 	@include MQ(S) {
-		width: 400px;
-		margin-right: -200px;
+		width: 300px;
+		margin-right: -150px;
 		margin-top: 2em;
-		font: 1.1em Arvo, sans-serif;			
+		font: 1em Arvo, sans-serif;			
 	}
 }
 
@@ -712,59 +712,58 @@ Page "Projects"
 
 .project-wrapper h2 {
 	position: absolute;
-	top: 10%;
+	top: 6%;
 	left: 50%;
 	margin-left: -8em;
-	text-align: center;
 	font: 4em Cabin Sketch, sans-serif;
 	color: #fff;
 	text-shadow: 2px 2px 3px #000, 1em 1em 2em #417a3f;
 
-	@include MQ(M) {
+	@include MQ(L) {
 		font-size: 3em;				
+	}
+	@include MQ(M) {
+		font-size: 2em;				
 	}
 
 	@include MQ(S) {
-		font-size: 1.7em;				
+		top: 10%;
+		font-size: 1.2em;				
 	}
 }
 
 .projects__block {
 	position: absolute;
-	top: 45%;
-	left: 50%;
-	margin-left: -55em;
-	width: 90%;
-	height: 20em;
+	top: 20%;
+	text-align:  center;
+	width: 100vw;
+	//height: 20em;
 
 	@include MQ(L) {
-		margin-left: -41em;
-		margin-top: -9em;				
+		top: 18%;		
 	}
 
-	@include MQ(M) {
-		margin-left: -27em;			
-	}
-
-	@include MQ(S) {
-		margin-left: -11em;
-		margin-top: -13em;	
-	}
+	// @include MQ(S) {
+	// 	margin-left: -11em;
+	// 	margin-top: -13em;	
+	// }
 }
 
 .projects {
 	display: inline-block;
 	margin-left: 2.5%;
+	margin-top: 2%;
 
-	width: 18em;
-	height: 20em;
+	width: 12em;
+	height: 15em;
 
 	border-radius: 1em;
 	overflow: hidden;
-	transition: 0.3s;
+	transition: 0.5s;
 
 	&:hover {
-		transform: scale(1.2);
+		transform: scale(2);
+		transition: 0.5s;
 
 		.project__descr {
 			opacity: 1;
@@ -773,14 +772,21 @@ Page "Projects"
 	}
 
 	@include MQ(L) {
-		width: 16em;
+		width: 15em;
 		height: 17em;
 		margin-top: 1%;	
 	}
 
-	@include MQ(S) {
+	@include MQ(M) {
 		width: 10em;
-		height: 12em;	
+		height: 13em;
+		margin-top: 3%;
+	}
+
+	@include MQ(S) {
+		width: 7em;
+		height: 8em;
+		margin-top: 3%;	
 	}
 }
 
@@ -788,11 +794,11 @@ Page "Projects"
 .project-2,
 .project-3,
 .project-4,
-.project-5 {
+.project-5,
+.project-6 {
 	width: 100%;
 	height: 100%;	
 	background-size: cover;
-	background-position: (-1.5em);
 }
 
 .project-1 {
@@ -801,6 +807,7 @@ Page "Projects"
 
 .project-2 {
 	background-image: url(../img/proj-2.jpg);
+	background-position: (-1em);
 }
 
 .project-3 {
@@ -812,7 +819,12 @@ Page "Projects"
 }
 
 .project-5 {
-	background-image: url(../img/proj-5.png);
+	background-image: url(../img/proj-5.png);	
+	background-position: (-1em);
+}
+
+.project-6 {
+	background-image: url(../img/proj-6.jpg);
 }
 
 .project__descr {
@@ -826,22 +838,22 @@ Page "Projects"
 	transition: 0.3s;
 
 	h3 {
-		font: 1.5em Arvo, sans-serif;
+		font: 1em Arvo, sans-serif;
 	}
 
 	p {
-		margin: 0.8em 0;
+		margin: 0.5em 0;
 		font-style: italic;
-		font-size: 18px;
-		line-height: 20px;
+		font-size: 10px;
+		line-height: 12px;
 	}
 
 	span {
-		font: 1.3em Arvo, sans-serif;
+		font: 0.6em Arvo, sans-serif;
 	}
 
 	.used-list {
-		font: 1em Arvo, sans-serif;
+		font: 0.7em Arvo, sans-serif;
 		text-align: left;
 		padding-left: 20px;
 	}
@@ -865,11 +877,11 @@ Page "Contacts"
 		text-shadow: 2px 2px 3px #000, 1em 1em 2em #417a3f;
 
 		@include MQ(M) {
-			font-size: 4em;				
+			font-size: 2.5em;				
 		}
 
 		@include MQ(S) {
-			font-size: 2.2em;							
+			font-size: 1.5em;							
 		}
 	}
 
@@ -890,8 +902,22 @@ Page "Contacts"
 	font: 2em Arvo, sans-serif;
 	line-height: 1.2em;
 
-	div {
-		margin-bottom: 4%
+	h3 {
+		@include MQ(S) {
+			font-size: 0.8em;		
+		}
+	}
+
+	p {
+		margin-bottom: 4%;
+
+		@include MQ(M) {
+			font-size: 0.8em;		
+		}
+
+		@include MQ(S) {
+			font-size: 0.6em;		
+		}
 	}
 
 	img {
@@ -905,11 +931,30 @@ Page "Contacts"
 			transform: scale(0.8);
 			transition: 0.3s;
 		}
+
+		@include MQ(M) {
+			width: 1.6em;		
+		}
+
+		@include MQ(S) {
+			width: 1.5em;		
+		}
+	}
+
+	@include MQ(L) {
+		width: 19em;
+		margin-top: 1em;
+		font-size: 1.7em;			
+	}
+
+	@include MQ(M) {
+		width: 15em;
+		margin-top: 2em;
+		font-size: 1.7em;			
 	}
 
 	@include MQ(S) {
-		width: 16em;
-		margin-top: 2EM;
+		width: 10em;
 		font-size: 1.5em;			
 	}
 }

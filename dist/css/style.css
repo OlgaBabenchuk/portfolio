@@ -75,10 +75,11 @@ table {
       font-size: 1.1em; } }
   @media only screen and (max-width: 480px) {
     .skills__heart {
-      margin-left: -200px;
+      margin-left: -150px;
       margin-top: -320px;
-      width: 400px;
-      height: 350px; } }
+      width: 300px;
+      height: 270px;
+      font-size: 0.65em; } }
 
 .heart-27, .heart-28, .heart-29, .heart-30 {
   font-weight: 200; }
@@ -975,7 +976,7 @@ Page "About"
     .about__text {
       position: static;
       margin: 1em auto 2em;
-      width: 24em; } }
+      width: 17em; } }
 
 .about__title,
 .about__text-1,
@@ -1014,8 +1015,8 @@ Page "About"
     .about__text-1,
     .about__text-2,
     .about__text-3 {
-      width: 22em;
-      font-size: 1.1em;
+      width: 21em;
+      font-size: 0.8em;
       padding: 10px 15px; } }
 
 .about__title {
@@ -1032,8 +1033,8 @@ Page "About"
       font-size: 2.5em; } }
   @media only screen and (max-width: 480px) {
     .about__title {
-      width: 12em;
-      font-size: 2em; } }
+      width: 100%;
+      font-size: 1.5em; } }
 
 /* -------------------------------- 
 
@@ -1063,10 +1064,10 @@ Page "Skills"
       font: 1.2em/1.5 Arvo, sans-serif; } }
   @media only screen and (max-width: 480px) {
     .skills__text {
-      width: 400px;
-      margin-right: -200px;
+      width: 300px;
+      margin-right: -150px;
       margin-top: 2em;
-      font: 1.1em Arvo, sans-serif; } }
+      font: 1em Arvo, sans-serif; } }
 
 .skills-list {
   padding-left: 50px; }
@@ -1078,49 +1079,44 @@ Page "Projects"
 -------------------------------- */
 .project-wrapper h2 {
   position: absolute;
-  top: 10%;
+  top: 6%;
   left: 50%;
   margin-left: -8em;
-  text-align: center;
   font: 4em Cabin Sketch, sans-serif;
   color: #fff;
   text-shadow: 2px 2px 3px #000, 1em 1em 2em #417a3f; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1440px) {
     .project-wrapper h2 {
       font-size: 3em; } }
+  @media only screen and (max-width: 992px) {
+    .project-wrapper h2 {
+      font-size: 2em; } }
   @media only screen and (max-width: 480px) {
     .project-wrapper h2 {
-      font-size: 1.7em; } }
+      top: 10%;
+      font-size: 1.2em; } }
 
 .projects__block {
   position: absolute;
-  top: 45%;
-  left: 50%;
-  margin-left: -55em;
-  width: 90%;
-  height: 20em; }
+  top: 20%;
+  text-align: center;
+  width: 100vw; }
   @media only screen and (max-width: 1440px) {
     .projects__block {
-      margin-left: -41em;
-      margin-top: -9em; } }
-  @media only screen and (max-width: 992px) {
-    .projects__block {
-      margin-left: -27em; } }
-  @media only screen and (max-width: 480px) {
-    .projects__block {
-      margin-left: -11em;
-      margin-top: -13em; } }
+      top: 18%; } }
 
 .projects {
   display: inline-block;
   margin-left: 2.5%;
-  width: 18em;
-  height: 20em;
+  margin-top: 2%;
+  width: 12em;
+  height: 15em;
   border-radius: 1em;
   overflow: hidden;
-  transition: 0.3s; }
+  transition: 0.5s; }
   .projects:hover {
-    transform: scale(1.2); }
+    transform: scale(2);
+    transition: 0.5s; }
     .projects:hover .project__descr {
       opacity: 1;
       -webkit-transition: opacity 1.5s;
@@ -1128,29 +1124,36 @@ Page "Projects"
       transition: opacity 1.5s; }
   @media only screen and (max-width: 1440px) {
     .projects {
-      width: 16em;
+      width: 15em;
       height: 17em;
       margin-top: 1%; } }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 992px) {
     .projects {
       width: 10em;
-      height: 12em; } }
+      height: 13em;
+      margin-top: 3%; } }
+  @media only screen and (max-width: 480px) {
+    .projects {
+      width: 7em;
+      height: 8em;
+      margin-top: 3%; } }
 
 .project-1,
 .project-2,
 .project-3,
 .project-4,
-.project-5 {
+.project-5,
+.project-6 {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: -1.5em; }
+  background-size: cover; }
 
 .project-1 {
   background-image: url(../img/proj-1.png); }
 
 .project-2 {
-  background-image: url(../img/proj-2.jpg); }
+  background-image: url(../img/proj-2.jpg);
+  background-position: -1em; }
 
 .project-3 {
   background-image: url(../img/proj-3.png); }
@@ -1159,7 +1162,11 @@ Page "Projects"
   background-image: url(../img/proj-4.png); }
 
 .project-5 {
-  background-image: url(../img/proj-5.png); }
+  background-image: url(../img/proj-5.png);
+  background-position: -1em; }
+
+.project-6 {
+  background-image: url(../img/proj-6.jpg); }
 
 .project__descr {
   width: 100%;
@@ -1171,16 +1178,16 @@ Page "Projects"
   opacity: 0;
   transition: 0.3s; }
   .project__descr h3 {
-    font: 1.5em Arvo, sans-serif; }
+    font: 1em Arvo, sans-serif; }
   .project__descr p {
-    margin: 0.8em 0;
+    margin: 0.5em 0;
     font-style: italic;
-    font-size: 18px;
-    line-height: 20px; }
+    font-size: 10px;
+    line-height: 12px; }
   .project__descr span {
-    font: 1.3em Arvo, sans-serif; }
+    font: 0.6em Arvo, sans-serif; }
   .project__descr .used-list {
-    font: 1em Arvo, sans-serif;
+    font: 0.7em Arvo, sans-serif;
     text-align: left;
     padding-left: 20px; }
 
@@ -1199,10 +1206,10 @@ Page "Contacts"
     text-shadow: 2px 2px 3px #000, 1em 1em 2em #417a3f; }
     @media only screen and (max-width: 992px) {
       .contacts h2 {
-        font-size: 4em; } }
+        font-size: 2.5em; } }
     @media only screen and (max-width: 480px) {
       .contacts h2 {
-        font-size: 2.2em; } }
+        font-size: 1.5em; } }
   @media only screen and (max-width: 480px) {
     .contacts {
       top: 10%;
@@ -1217,8 +1224,17 @@ Page "Contacts"
   text-shadow: 2px 2px 3px #000, 1em 1em 3em #417a3f;
   font: 2em Arvo, sans-serif;
   line-height: 1.2em; }
-  .contacts__info div {
+  @media only screen and (max-width: 480px) {
+    .contacts__info h3 {
+      font-size: 0.8em; } }
+  .contacts__info p {
     margin-bottom: 4%; }
+    @media only screen and (max-width: 992px) {
+      .contacts__info p {
+        font-size: 0.8em; } }
+    @media only screen and (max-width: 480px) {
+      .contacts__info p {
+        font-size: 0.6em; } }
   .contacts__info img {
     display: inline-block;
     width: 3em;
@@ -1228,10 +1244,25 @@ Page "Contacts"
     .contacts__info img:hover {
       transform: scale(0.8);
       transition: 0.3s; }
+    @media only screen and (max-width: 992px) {
+      .contacts__info img {
+        width: 1.6em; } }
+    @media only screen and (max-width: 480px) {
+      .contacts__info img {
+        width: 1.5em; } }
+  @media only screen and (max-width: 1440px) {
+    .contacts__info {
+      width: 19em;
+      margin-top: 1em;
+      font-size: 1.7em; } }
+  @media only screen and (max-width: 992px) {
+    .contacts__info {
+      width: 15em;
+      margin-top: 2em;
+      font-size: 1.7em; } }
   @media only screen and (max-width: 480px) {
     .contacts__info {
-      width: 16em;
-      margin-top: 2EM;
+      width: 10em;
       font-size: 1.5em; } }
 
 /*# sourceMappingURL=style.css.map */
